@@ -7,13 +7,13 @@
 Reducere::Reducere(const vector<Componenta> &componente) : componente(componente) {}
 
 int Reducere::reducere() const {
-    int n;
-    for (int i = 0; i < n; i++) {
+    for (auto i = 0ull; i < componente.size(); i++) {
         if (componente[i].getPrice() > 1000 && componente[i].getBrand() == "Nvidia") {
             return componente[i].getPrice() - (10 / 100) * componente[i].getPrice();
 
         }
     }
+    return 0;
 }
 
 Reducere::~Reducere() {
