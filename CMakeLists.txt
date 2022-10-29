@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.15)
 
 # NOTE: update executable name in .github/workflows/cmake.yml:44 when changing executable name in this file
 # for now, the project name is used as the executable name
-project(oop)
+project(Tema1)
 
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -41,7 +41,7 @@ endif()
 ###############################################################################
 
 # NOTE: update executable name in .github/workflows/cmake.yml when changing name here
-add_executable(${PROJECT_NAME} main.cpp)
+add_executable(${PROJECT_NAME} main.cpp Componenta.cpp Componenta.h clasa.cpp clasa.h Angajat.cpp Angajat.h Reducere.cpp Reducere.h)
 
 ###############################################################################
 

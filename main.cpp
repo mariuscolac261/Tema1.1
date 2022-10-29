@@ -1,6 +1,8 @@
 #include <iostream>
+#include "Componenta.h"
+#include <vector>
 
 int main() {
-    std::cout << "Hello, world!\n";
-    return 0;
+    std::vector<Componenta> c1;
+    c1[0] = {"gpu", 1002, "Nvidia"};
 }
