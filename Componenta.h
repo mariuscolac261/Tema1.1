@@ -15,13 +15,17 @@ using std::vector;
 
 class Componenta {
 public:
-    Componenta(const string &NAME = "gpu", int PRICE = 10, const string &BRAND = "intel");
+
+    Componenta(const string &NAME = "gpu", float PRICE = 10, const string &BRAND = "Nvidia");
 
     Componenta(const Componenta &other);
 
     Componenta &operator=(const Componenta &other);
 
-    int getPrice() const;
+
+    void setPrice(float PRICE);
+
+    float getPrice();
 
     string getBrand() const;
 
@@ -29,21 +33,9 @@ public:
 
     ~Componenta();
 
-    int reducere() const {
-        int n;
-        std::vector<Componenta> componente;
-        for (int i = 0; i < n; i++) {
-            if (componente[i].getPrice() > 1000 && componente[i].getBrand() == "Nvidia") {
-                return componente[i].getPrice() - (10 / 100) * componente[i].getPrice();
-
-            }
-        }
-    }
-
-
 private:
     string name;
-    int price;
+    float price;
     string brand;
 
 };

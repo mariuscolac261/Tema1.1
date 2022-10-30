@@ -16,9 +16,9 @@ using std::vector;
 
 class Reducere {
 public:
-    explicit Reducere(const vector<Componenta> &componente);
+    Reducere(const vector<Componenta> &COMPONENTA);
 
-    int reducere() const;
+    void sale();
 
     ~Reducere();
 

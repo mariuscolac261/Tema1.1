@@ -17,9 +17,7 @@ Componenta &Componenta::operator=(const Componenta &other) {
     return *this;
 }
 
-Componenta::Componenta(const string &NAME, int PRICE, const string &BRAND) : name{NAME}, price(PRICE), brand(BRAND) {
-    std::cout << "Constructor de initializare";
-}
+
 
 Componenta::~Componenta() {
     std::cout << "Destr Componenta";
@@ -30,13 +28,30 @@ ostream &operator<<(ostream &COUT, const Componenta &c1) {
     return COUT;
 }
 
-int Componenta::getPrice() const {
-    return price;
-}
 
 string Componenta::getBrand() const {
     return brand;
 }
+
+
+Componenta::Componenta(const string &NAME, float PRICE, const string &BRAND) : name{NAME}, price{PRICE}, brand{BRAND} {
+    std::cout << "Constructor de initializare";
+}
+
+void Componenta::setPrice(float PRICE) {
+    price = PRICE;
+}
+
+float Componenta::getPrice() {
+    return price;
+}
+
+
+
+
+
+
+
 
 
 

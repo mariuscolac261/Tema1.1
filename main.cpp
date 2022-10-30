@@ -5,9 +5,9 @@
 
 int main() {
     std::vector<Componenta> componente;
-    componente.push_back({"gpu", 1001, "Nvidia"});
+    componente.push_back({"gpu", 2000, "Nvidia"});
     Reducere r1{componente};
-    std::cout << r1.reducere();
+    r1.sale();
 
 
 }
