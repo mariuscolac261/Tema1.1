@@ -20,7 +20,7 @@ void Comanda::setCprice(float CPRICE) {
     cprice = CPRICE;
 }
 
-float Comanda::getCprice() const {
+float Comanda::getCprice() {
     return cprice;
 }
 
@@ -33,6 +33,13 @@ ostream &operator<<(ostream &os, const Comanda &co) {
     return os;
 }
 
+void Comanda::setNrc(float NRC) {
+    nrc = NRC;
+}
+
+int Comanda::getNrc() {
+    return nrc;
+}
 
 Comanda::Comanda(float CPRICE, int NRC) : cprice{CPRICE}, nrc{NRC} {
     std::cout << "Constructor de initializare Comanda";

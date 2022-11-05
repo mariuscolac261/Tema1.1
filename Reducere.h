@@ -18,11 +18,11 @@ using std::vector;
 
 class Reducere {
 public:
-    explicit Reducere(const vector<Componenta> &COMPONENTA);
+    Reducere(const vector<Componenta> &COMPONENTA);
 
-    explicit Reducere(const vector<Angajat> &ANGAJATA);
+    Reducere(const vector<Angajat> &ANGAJATA);
 
-    explicit Reducere(const vector<Comanda> &COMANDA);
+    Reducere(const vector<Comanda> &COMANDA);
 
     void sale();
 

@@ -7,13 +7,11 @@
 
 #include <iostream>
 #include <string>
-
 using std::string;
 using std::ostream;
-
 class Comanda {
 public:
-    explicit Comanda(float CPRICE = 500, int NRC = 5);
+    Comanda(float CPRICE = 500, int NRC = 5);
 
     Comanda(const Comanda &other);
 
@@ -21,7 +19,9 @@ public:
 
     void setCprice(float CPRICE);
 
-    [[nodiscard]] float getCprice() const;
+    float getCprice();
+
+    void setNrc(float NRC);
 
     int getNrc();
 
