@@ -5,26 +5,43 @@
 #include "Angajat.h"
 
 
-Angajat::Angajat(const string &NAME, const string ACTIVITY) : name{NAME}, activity{ACTIVITY} {
-    std::cout << "Constructor de initializare Angajat\n";
+Angajat::Angajat(const string &NAME, float SALLARY, int NRS) : name{NAME}, sallary{SALLARY}, nrs{NRS} {
+    std::cout << "Constructor de initializare";
 }
 
-Angajat::Angajat(const Angajat &other) : name{other.name}, activity{other.activity} {
-    std::cout << "COnstructor de copiere Angajat\n";
+Angajat::Angajat(const Angajat &other) : name{other.name}, sallary{other.sallary}, nrs{other.nrs} {
+    std::cout << "Constructor de copiere Angajat";
 }
 
 Angajat &Angajat::operator=(const Angajat &other) {
     name = other.name;
-    activity = other.activity;
-    std::cout << "operator= copiere Angajat\n";
+    sallary = other.sallary;
+    nrs = other.nrs;
+    std::cout << "operator= copiere Angajat";
     return *this;
 }
 
-ostream &operator<<(ostream &COUT, const Angajat &a1) {
-    COUT << "Nume : " << a1.name << "Activitate : " << a1.activity << "\n";
-    return COUT;
+void Angajat::setSallary(float SALLARY) {
+    sallary = SALLARY;
+}
+
+float Angajat::getSallary() {
+    return sallary;
+}
+
+void Angajat::setNrs(int NRS) {
+    nrs = NRS;
+}
+
+int Angajat::getNrs() {
+    return nrs;
 }
 
 Angajat::~Angajat() {
-    std::cout << "Destr Angajat\n";
+    std::cout << "Destr Angajat";
+}
+
+ostream &operator<<(ostream &os, const Angajat &an) {
+    os << "Nume: " << an.name << "Salariu: " << an.sallary << "Numar servicii prestate: " << an.nrs;
+    return os;
 }

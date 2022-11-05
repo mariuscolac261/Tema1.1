@@ -9,6 +9,8 @@
 #include <string>
 #include <utility>
 #include "Componenta.h"
+#include "Angajat.h"
+#include "Comanda.h"
 #include <vector>
 
 using std::string;
@@ -18,12 +20,22 @@ class Reducere {
 public:
     Reducere(const vector<Componenta> &COMPONENTA);
 
+    Reducere(const vector<Angajat> &ANGAJATA);
+
+    Reducere(const vector<Comanda> &COMANDA);
+
     void sale();
+
+    void bonus();
+
+    void sale2();
 
     ~Reducere();
 
 private:
+    vector<Angajat> angajati;
     vector<Componenta> componente;
+    vector<Comanda> comenzi;
 };
 
 
