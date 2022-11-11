@@ -16,9 +16,9 @@ using std::vector;
 class Componenta {
 public:
 
-    Componenta(const string &NAME = "gpu", float PRICE = 10, const string &BRAND = "Nvidia");
+    explicit Componenta(const string &NAME = "gpu", float PRICE = 10, const string &BRAND = "Nvidia");
 
-    Componenta(const Componenta &other);
+    explicit Componenta(const Componenta &other);
 
     Componenta &operator=(const Componenta &other);
 
@@ -27,7 +27,6 @@ public:
 
     float getPrice();
 
-    string getBrand() const;
 
     friend ostream &operator<<(ostream &COUT, const Componenta &c1);
 

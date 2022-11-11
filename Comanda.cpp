@@ -33,9 +33,6 @@ ostream &operator<<(ostream &os, const Comanda &co) {
     return os;
 }
 
-void Comanda::setNrc(float NRC) {
-    nrc = NRC;
-}
 
 int Comanda::getNrc() {
     return nrc;

@@ -15,7 +15,7 @@ Reducere::Reducere(const vector<Componenta> &COMPONENTA) : componente{COMPONENTA
 }
 
 void Reducere::sale() {
-    float y = 0.1;
+    double y = 0.1;
     for (auto i = 0ull; i < componente.size(); i++) {
         if (componente[i].getPrice() > 1000) {
             float x = componente[i].getPrice() - y * componente[i].getPrice();
@@ -40,7 +40,7 @@ void Reducere::bonus() {
 void Reducere::sale2() {
 
     for (auto i = 0ull; i < comenzi.size(); i++) {
-        float x = 0.15;
+        double x = 0.15;
         if (comenzi[i].getCprice() > 2500 && comenzi[i].getNrc() > 5) {
             float y = comenzi[i].getCprice() - x * comenzi[i].getCprice();
             comenzi[i].setCprice(y);

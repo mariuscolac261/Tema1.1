@@ -21,8 +21,6 @@ public:
 
     float getCprice();
 
-    void setNrc(float NRC);
-
     int getNrc();
 
     ~Comanda();

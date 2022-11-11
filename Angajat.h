@@ -24,7 +24,6 @@ public:
 
     float getSallary();
 
-    void setNrs(int NRS);
 
     int getNrs();
 

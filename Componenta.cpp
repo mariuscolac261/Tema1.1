@@ -29,11 +29,6 @@ ostream &operator<<(ostream &COUT, const Componenta &c1) {
 }
 
 
-string Componenta::getBrand() const {
-    return brand;
-}
-
-
 Componenta::Componenta(const string &NAME, float PRICE, const string &BRAND) : name{NAME}, price{PRICE}, brand{BRAND} {
     std::cout << "Constructor de initializare";
 }

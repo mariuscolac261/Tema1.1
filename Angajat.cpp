@@ -29,9 +29,6 @@ float Angajat::getSallary() {
     return sallary;
 }
 
-void Angajat::setNrs(int NRS) {
-    nrs = NRS;
-}
 
 int Angajat::getNrs() {
     return nrs;
