@@ -9,6 +9,7 @@ Componenta::Componenta(const Componenta &other) : name{other.name}, price{other.
     std::cout << "Constructor de copiere";
 }
 
+
 Componenta &Componenta::operator=(const Componenta &other) {
     name = other.name;
     price = other.price;

@@ -16,9 +16,10 @@ using std::vector;
 class Componenta {
 public:
 
+
     explicit Componenta(const string &NAME = "gpu", float PRICE = 10, const string &BRAND = "Nvidia");
 
-    explicit Componenta(const Componenta &other);
+    Componenta(const Componenta &other);
 
     Componenta &operator=(const Componenta &other);
 

@@ -34,6 +34,7 @@ ostream &operator<<(ostream &os, const Comanda &co) {
 }
 
 
+
 int Comanda::getNrc() {
     return nrc;
 }
@@ -41,3 +42,5 @@ int Comanda::getNrc() {
 Comanda::Comanda(float CPRICE, int NRC) : cprice{CPRICE}, nrc{NRC} {
     std::cout << "Constructor de initializare Comanda";
 }
+
+

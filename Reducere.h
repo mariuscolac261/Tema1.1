@@ -20,7 +20,7 @@ class Reducere {
 public:
     explicit Reducere(const vector<Componenta> &COMPONENTA);
 
-    explicit Reducere(const vector<Angajat> &ANGAJATA);
+     explicit Reducere(const vector<Angajat> &ANGAJATA);
 
     explicit Reducere(const vector<Comanda> &COMANDA);
 

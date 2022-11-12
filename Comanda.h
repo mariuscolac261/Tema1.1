@@ -11,15 +11,18 @@ using std::string;
 using std::ostream;
 class Comanda {
 public:
+
     Comanda(float CPRICE = 500, int NRC = 5);
 
     Comanda(const Comanda &other);
+
 
     Comanda &operator=(const Comanda &other);
 
     void setCprice(float CPRICE);
 
     float getCprice();
+
 
     int getNrc();
 

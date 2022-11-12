@@ -23,7 +23,7 @@ public:
     void setSallary(float SALLARY);
 
     float getSallary();
-
+    
 
     int getNrs();
 
