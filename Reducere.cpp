@@ -15,11 +15,11 @@ Reducere::Reducere(const vector<Componenta> &COMPONENTA) : componente{COMPONENTA
 }
 
 void Reducere::sale() {
-    float y = 0.1;
+   double y = (float) 0.1;
     for (auto i = 0ull; i < componente.size(); i++) {
         if (componente[i].getPrice() > 1000) {
-            float x = componente[i].getPrice() - y * componente[i].getPrice();
-            componente[i].setPrice(x);
+            double x = (float) componente[i].getPrice() - y * componente[i].getPrice();
+            componente[i].setPrice((float) x);
         }
         std::cout << componente[i].getPrice() << "\n";
     }
@@ -29,7 +29,7 @@ void Reducere::bonus() {
 
     for (auto i = 0ull; i < angajati.size(); i++) {
         if (angajati[i].getNrs() >= 50) {
-            int x = angajati[i].getSallary() + 1000;
+            float x = angajati[i].getSallary() + 1000;
             angajati[i].setSallary(x);
 
         }
@@ -38,11 +38,11 @@ void Reducere::bonus() {
 }
 
 void Reducere::sale2() {
-    float x = 0.15;
+    double x = (float) 0.15;
     for (auto i = 0ull; i < comenzi.size(); i++) {
         if (comenzi[i].getCprice() > 2500 && comenzi[i].getNrc() > 5) {
-            float y = comenzi[i].getCprice() - x * comenzi[i].getCprice();
-            comenzi[i].setCprice(y);
+            double y = (float) comenzi[i].getCprice() - x * comenzi[i].getCprice();
+            comenzi[i].setCprice((float) y);
         }
 
         std::cout << comenzi[i].getCprice() << "\n";

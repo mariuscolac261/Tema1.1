@@ -12,7 +12,7 @@ using std::ostream;
 class Comanda {
 public:
 
-    Comanda(float CPRICE = 500, int NRC = 5);
+    explicit Comanda(float CPRICE = 500, int NRC = 5);
 
     Comanda(const Comanda &other);
 
