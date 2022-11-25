@@ -10,6 +10,9 @@ int main() {
     componente.push_back(Componenta("gpu", 2000, "nvidia"));
     comenzi.push_back(Comanda(2600, 6));
     angajati.push_back(Angajat("abc", 2000, 52));
+    componente.push_back(Componenta("gpu", 3000, "nvidia"));
+    comenzi.push_back(Comanda(3100, 6));
+    angajati.push_back(Angajat("efg", 3200, 52));
     Reducere r1{componente};
     Reducere r2{comenzi};
     Reducere r3{angajati};
