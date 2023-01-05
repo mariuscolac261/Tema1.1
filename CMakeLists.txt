@@ -2,8 +2,7 @@ cmake_minimum_required(VERSION 3.15)
 
 # NOTE: update executable name in .github/workflows/cmake.yml:44 when changing executable name in this file
 # for now, the project name is used as the executable name
-add_executable(${Tema2P00} main.cpp Angajati.cpp Angajati.h Programator.cpp Programator.h Contabil.cpp Contabil.h FoodSupplier.cpp FoodSupplier.h Exceptii.cpp Exceptii.h
-
+project(Tema2POO)
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
@@ -41,7 +40,7 @@ endif()
 ###############################################################################
 
 # NOTE: update executable name in .github/workflows/cmake.yml when changing name here
-add_executable(Tema2POO main.cpp Angajati.cpp Angajati.h Programator.cpp Programator.h Contabil.cpp Contabil.h FoodSupplier.cpp FoodSupplier.h Exceptii.cpp Exceptii.h)
+add_executable(${PROJECT_NAME} main.cpp Angajati.cpp Angajati.h Programator.cpp Programator.h Contabil.cpp Contabil.h FoodSupplier.cpp FoodSupplier.h Exceptii.cpp Exceptii.h)
 
 ###############################################################################
 
@@ -121,6 +120,6 @@ endif()
 ###############################################################################
 
 # copy binaries to bin folder; these are uploaded as artifacts on each release
-install(TARGETS ${PROJECT_NAME} DESTINATION bin))
+install(TARGETS ${PROJECT_NAME} DESTINATION bin)
 # install(DIRECTORY some_dir1 some_dir2 DESTINATION bin)
 # install(FILES some_file1.txt some_file2.md DESTINATION bin)
