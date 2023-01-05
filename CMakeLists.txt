@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.15)
 
 # NOTE: update executable name in .github/workflows/cmake.yml:44 when changing executable name in this file
 # for now, the project name is used as the executable name
-add_executable(${TEMA2P00} main.cpp Angajati.cpp Angajati.h Programator.cpp Programator.h Contabil.cpp Contabil.h FoodSupplier.cpp FoodSupplier.h Exceptii.cpp Exceptii.h
+add_executable(${Tema2P00} main.cpp Angajati.cpp Angajati.h Programator.cpp Programator.h Contabil.cpp Contabil.h FoodSupplier.cpp FoodSupplier.h Exceptii.cpp Exceptii.h
 
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
