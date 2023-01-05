@@ -12,7 +12,10 @@ int main() {
     angajati.push_back(Angajat("abc", 2000, 52));
     componente.push_back(Componenta("gpu", 3000, "nvidia"));
     comenzi.push_back(Comanda(3100, 6));
-    angajati.push_back(Angajat("efg", 3200, 52));
+    angajati.push_back(Angajat("efg", 3200, 78));
+    componente.push_back(Componenta("gpu", 4200, "nvidia"));
+    comenzi.push_back(Comanda(4300, 8));
+    angajati.push_back(Angajat("efg", 5300, 67));
     Reducere r1{componente};
     Reducere r2{comenzi};
     Reducere r3{angajati};
